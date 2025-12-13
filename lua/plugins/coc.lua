@@ -21,12 +21,15 @@ return {
         { "<leader>rn", "<Plug>(coc-rename)", mode = "n", silent = true, desc = "Symbol Renaming"},
 
         -- Formatting Selected Code
-        { "<leader>f", "<Plug>(coc-format-selected)", mode = "x", silent = true, desc = "Format Selected Code"}, 
+        { "<leader>f", "<Plug>(coc-format-selected)", mode = "x", silent = true, desc = "Format Selected Code"},
         { "<leader>f", "<Plug>(coc-format-selected)", mode = "n", silent = true, desc = "Format Selected Code"},
         { "<leader>F", "<Plug>(coc-format)", mode = "n", silent = true, desc = "Format Document"},
 
         -- Show Documentation
-        { "K", function() _G.show_docs() end, mode = "n", silent = true, desc = "Show documentation" }
+        { "K", function() _G.show_docs() end, mode = "n", silent = true, desc = "Show documentation" },
+
+	-- Switch between header and source
+	{ "<leader>cs", ":CocCommand clangd.switchSourceHeader<CR>", mode = "n", silent = true}
     },
     config = function()
         -- Define the global function
