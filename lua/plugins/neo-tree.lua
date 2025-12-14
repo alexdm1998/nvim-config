@@ -5,10 +5,9 @@ return {
 		"nvim-lua/plenary.nvim",
 		"MunifTanjim/nui.nvim",
 		"nvim-tree/nvim-web-devicons",
-	}, 
+	},
 	keys = {
 		{"<C-b>", "<Cmd>Neotree<CR>", desc="Open Neotree"}
 	},
 	lazy = true,
-	
 }

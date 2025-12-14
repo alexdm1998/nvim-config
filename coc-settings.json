@@ -1,5 +1,4 @@
 {
   "snippets.ultisnips.pythonPrompt": false,
-  "semanticTokens.enable": true,
   "Lua.diagnostics.globals": ["vim"]
 }
