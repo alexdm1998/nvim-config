@@ -27,9 +27,10 @@ return {
 
         -- Show Documentation
         { "K", function() _G.show_docs() end, mode = "n", silent = true, desc = "Show documentation" },
+				{"<leader>ih", "<cmd>CocCommand document.toggleInlayHint<CR>", mode = "n", silent = true, desc = "Toggle Inlay Hints"},
 
-	-- Switch between header and source
-	{ "<leader>cs", ":CocCommand clangd.switchSourceHeader<CR>", mode = "n", silent = true}
+				-- Switch between header and source
+				{ "<leader>cs", ":CocCommand clangd.switchSourceHeader<CR>", mode = "n", silent = true}
     },
     config = function()
         -- Define the global function
