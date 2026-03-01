@@ -1,3 +1,4 @@
+--[[
 return {
 	"catppuccin/nvim",
 	name = "catppuccin",
@@ -6,7 +7,7 @@ return {
 		vim.cmd.colorscheme("catppuccin")
 	end
 }
-
+--]]
 
 
 
@@ -24,3 +25,29 @@ return {
 	}
 }
 --]]
+
+
+--[[
+return {
+  "loctvl842/monokai-pro.nvim",
+  lazy = false,
+  priority = 1000,
+  config = function()
+    require("monokai-pro").setup()
+    vim.cmd.colorscheme("monokai-pro")
+  end,
+}
+--]]
+
+
+
+
+-- Good for c++, especially with the inlayHints enabled
+return {
+    'AlexvZyl/nordic.nvim',
+    lazy = false,
+    priority = 1000,
+    config = function()
+        require('nordic').load()
+    end
+}
