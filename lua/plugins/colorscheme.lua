@@ -44,10 +44,23 @@ return {
 
 -- Good for c++, especially with the inlayHints enabled
 return {
-    'AlexvZyl/nordic.nvim',
-    lazy = false,
-    priority = 1000,
-    config = function()
-        require('nordic').load()
-    end
+	'AlexvZyl/nordic.nvim',
+	lazy = false,
+	priority = 1000,
+	config = function()
+		require('nordic').load()
+
+		vim.api.nvim_set_hl(0, "TreesitterContext", {
+			bg = "#3A3F4A"
+		})
+
+		vim.api.nvim_set_hl(0, "TreesitterContextBottom", {
+			underline = true,
+			sp = "#5E81AC"
+		})
+
+		vim.api.nvim_set_hl(0, "TreesitterContextLineNumber", {
+			bg = "#2E3440"
+		})
+	end
 }
