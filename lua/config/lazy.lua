@@ -21,13 +21,16 @@ vim.opt.rtp:prepend(lazypath)
 -- This is also a good place to setup other settings (vim.opt)
 vim.g.mapleader = " "
 -- Visual width of a tab character
-vim.opt.tabstop = 2
+vim.opt.tabstop = 4
 -- Number of spaces for auto-indent
-vim.opt.shiftwidth = 2
+vim.opt.shiftwidth = 4
 -- How many spaces a <Tab> inserts
-vim.opt.softtabstop = 2
-
-
+vim.opt.softtabstop = 4
+-- Show line number
+vim.opt.number = true
 -- Use spaces instead of real tabs? false = real tabs, true = spaces
-vim.opt.expandtab = false-- Setup lazy.nvim
+vim.opt.expandtab = true
+
+
+-- Setup lazy.nvim
 require("lazy").setup({spec = { import = "plugins" }}, {})
