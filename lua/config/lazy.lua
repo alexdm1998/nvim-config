@@ -30,7 +30,11 @@ vim.opt.softtabstop = 4
 vim.opt.number = true
 -- Use spaces instead of real tabs? false = real tabs, true = spaces
 vim.opt.expandtab = true
-
+-- Copies and pastes from the clipboard
+vim.opt.clipboard = "unnamedplus"
 
 -- Setup lazy.nvim
 require("lazy").setup({spec = { import = "plugins" }}, {})
+
+
+
