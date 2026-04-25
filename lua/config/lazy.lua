@@ -35,6 +35,3 @@ vim.opt.clipboard = "unnamedplus"
 
 -- Setup lazy.nvim
 require("lazy").setup({spec = { import = "plugins" }}, {})
-
-
-

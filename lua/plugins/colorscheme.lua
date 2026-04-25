@@ -48,6 +48,17 @@ return {
     config = function()
         require('nordic').load()
 
+        vim.api.nvim_set_hl(0, "Visual", {
+            bg = "#4C566A", -- muted slate-blue
+            fg = nil, -- keep text color default
+        })
+
+
+        vim.api.nvim_set_hl(0, "CocInlayHint", {
+            fg = "#E0C080",
+            bg = "#3A3220",
+        })
+
         vim.api.nvim_set_hl(0, "TreesitterContext", {
             bg = "#3A3F4A"
         })
