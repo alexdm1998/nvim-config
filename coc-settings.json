@@ -1,5 +1,5 @@
 {
   "snippets.ultisnips.pythonPrompt": false,
-  "Lua.diagnostics.globals": ["vim"],
+  "Lua.diagnostics.globals": ["vim", "hl"],
 	"inlayHint.enable": true
 }
